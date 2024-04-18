@@ -1,2 +1,0 @@
-# coryatalgox.github.io
-Website

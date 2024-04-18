@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 537.05 694.92">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clippath-2);
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-4 {
+        clip-path: url(#clippath-1);
+      }
+
+      .cls-5 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-6 {
+        clip-path: url(#clippath-3);
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-2" width="537.05" height="274.76"/>
+    </clipPath>
+    <clipPath id="clippath-1">
+      <path class="cls-2" d="M233.48,267.97L358.52,17.9h149.26l-112.58,225.96c-7.34,1.17-12.98,7.48-12.98,15.16,0,8.51,6.89,15.42,15.42,15.42s15.42-6.88,15.42-15.42l-.71-5L536.71,0h-189.25l-125.03,250.07h-77.38L28.96,17.9h149.26l54.51,109.05h-64.62l-13.09-26.22c1.13-2.15,1.84-4.55,1.84-7.15,0-8.51-6.89-15.42-15.42-15.42s-15.42,6.88-15.42,15.42c0,7.67,5.64,13.99,12.97,15.16l18.06,36.11h104.65L189.29,0H0l133.99,267.97h99.49Z"/>
+    </clipPath>
+    <clipPath id="clippath-2">
+      <rect class="cls-2" x=".02" y="420.47" width="537.03" height="274.45"/>
+    </clipPath>
+    <clipPath id="clippath-3">
+      <path class="cls-2" d="M402.74,426.94h-99.49l-125.04,250.07H28.95l112.59-225.96c7.33-1.17,12.97-7.48,12.97-15.16,0-8.5-6.88-15.42-15.42-15.42s-15.42,6.92-15.42,15.42l.71,5.01L.02,694.92h189.25l125.04-250.07h77.38l116.08,232.17h-149.22l-54.51-109.05h64.59l13.09,26.22c-1.13,2.14-1.84,4.55-1.84,7.15,0,8.5,6.92,15.42,15.42,15.42s15.42-6.89,15.42-15.42c0-7.67-5.64-13.99-12.97-15.16l-18.06-36.11h-104.65l72.41,144.86h189.29l-133.99-267.98Z"/>
+    </clipPath>
+  </defs>
+  <g class="cls-5">
+    <g class="cls-4">
+      <path class="cls-3" d="M0,0h537.09v274.44H0V0Z"/>
+    </g>
+  </g>
+  <g class="cls-1">
+    <g class="cls-6">
+      <path class="cls-3" d="M.02,420.47h537.1v274.45H.02v-274.45Z"/>
+    </g>
+  </g>
+</svg>
