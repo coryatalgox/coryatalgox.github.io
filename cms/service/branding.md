@@ -1,14 +1,14 @@
 ---
 title: Branding, Narrative, & Messaging
 slug: branding
-updated-on: '2024-04-18T08:34:58.452Z'
+updated-on: '2024-04-27T14:18:34.032Z'
 created-on: '2022-12-28T02:51:49.238Z'
-published-on: '2024-04-18T10:20:17.117Z'
+published-on: '2024-04-27T14:57:52.054Z'
 f_description: >-
   Our team of Web3 experts helps you to craft a narrative that resonates with
   current and emerging Web3 trends, and express it in ways that clearly
   communicates the value of your project
-f_sorting-number: 1
+f_sorting-number: 4
 f_image-1st-main-2:
   url: /assets/external/661d113c99ce4963cb41e253_pexels-jack-sparrow-5918389.jpg
   alt: null
@@ -16,7 +16,7 @@ f_description-short: >-
   Communicate your story clearly and concisely to your community and
   stakeholders
 f_title-long: Branding, Narrative, & Messaging
-f_number-text: '01.'
+f_number-text: '04.'
 f_solution: cms/solution/startups.md
 f_color: '#78e4ff'
 f_featured: true

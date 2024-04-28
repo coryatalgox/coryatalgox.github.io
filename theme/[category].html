@@ -276,7 +276,7 @@
                 {%- assign collection = collections.social | sort: "-created-on" -%}<div class="nav-contact-socials w-dyn-list">
                   {%- unless collection.length == 0 -%}<div role="list" class="nav-contact-socials-list w-dyn-items">
                     {%- for item in collection -%}<div role="listitem" class="nav-contact-socials-item w-dyn-item">
-                      <a aria-label="Social Button" href="{{ item.url }}" class="nav-contact-socials-link w-inline-block"><img loading="lazy" alt="{{ images.0.alt | escape }}" src="{{ item.data.f_icon-dark.url }}" class="nav-contact-socials-icon"></a>
+                      <a aria-label="Social Button" href="{{ item.url }}" class="nav-contact-socials-link w-inline-block"><img alt="{{ images.0.alt | escape }}" loading="lazy" src="{{ item.data.f_icon-dark.url }}" class="nav-contact-socials-icon"></a>
                     </div>{%- endfor -%}
                   </div>{%- endunless -%}
                   {%- if collection.length == 0 -%}<div class="empty-state-hidden w-dyn-empty">
@@ -374,7 +374,7 @@
             {%- assign collection = collections.social | sort: "-created-on" -%}<div class="aside-cms-socials w-dyn-list">
               {%- unless collection.length == 0 -%}<div role="list" class="aside-cms-socials-list w-dyn-items">
                 {%- for item in collection -%}<div role="listitem" class="aside-cms-social-item w-dyn-item">
-                  <a aria-label="Social Button" href="{{ item.url }}" class="aside-cms-social-link w-inline-block"><img loading="lazy" alt="{{ images.0.alt | escape }}" src="{{ item.data.f_icon-dark.url }}" class="aside-cms-social-icon"></a>
+                  <a aria-label="Social Button" href="{{ item.url }}" class="aside-cms-social-link w-inline-block"><img alt="{{ images.0.alt | escape }}" loading="lazy" src="{{ item.data.f_icon-dark.url }}" class="aside-cms-social-icon"></a>
                 </div>{%- endfor -%}
               </div>{%- endunless -%}
               {%- if collection.length == 0 -%}<div class="empty-state-hidden w-dyn-empty">
@@ -610,7 +610,7 @@
         </div>
         <div class="footer-1-brand-row">
           <a href="{{ links.23 }}" class="footer-1-brand-link-1 w-nav-brand"><img src="{{ images.27789c17.url }}" loading="lazy" alt="{{ images.27789c17.alt | escape }}" class="logo-image-default">
-            <p class="footer-2-brand-name">{{ texts.676227e3 }}<span class="span-footer-brand">{{ texts.58 }}</span></p>
+            <p class="footer-2-brand-name">{{ texts.-7b1d2bb1 }}<span class="span-footer-brand">{{ texts.58 }}</span></p>
           </a>
         </div>
         <div class="footer-1-row-1">
@@ -674,7 +674,7 @@
           {%- assign collection = collections.social | sort: "-created-on" -%}<div class="footer-2-socials-2 w-dyn-list">
             {%- unless collection.length == 0 -%}<div role="list" class="footer-2-socials-2-list w-dyn-items">
               {%- for item in collection -%}<div role="listitem" class="footer-2-socials-2-item w-dyn-item">
-                <a aria-label="Social Button" href="{{ item.url }}" class="footer-social-link-1 w-inline-block"><img loading="lazy" alt="{{ images.0.alt | escape }}" src="{{ item.data.f_icon-white.url }}" class="footer-social-icon"></a>
+                <a aria-label="Social Button" href="{{ item.url }}" class="footer-social-link-1 w-inline-block"><img alt="{{ images.0.alt | escape }}" loading="lazy" src="{{ item.data.f_icon-white.url }}" class="footer-social-icon"></a>
               </div>{%- endfor -%}
             </div>{%- endunless -%}
             {%- if collection.length == 0 -%}<div class="empty-state-hidden w-dyn-empty">

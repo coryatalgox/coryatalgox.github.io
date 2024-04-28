@@ -269,7 +269,7 @@
                 {%- assign collection = collections.social | sort: "-created-on" -%}<div class="nav-contact-socials w-dyn-list">
                   {%- unless collection.length == 0 -%}<div role="list" class="nav-contact-socials-list w-dyn-items">
                     {%- for item in collection -%}<div role="listitem" class="nav-contact-socials-item w-dyn-item">
-                      <a aria-label="Social Button" href="{{ item.url }}" class="nav-contact-socials-link w-inline-block"><img loading="lazy" alt="{{ images.0.alt | escape }}" src="{{ item.data.f_icon-dark.url }}" class="nav-contact-socials-icon"></a>
+                      <a aria-label="Social Button" href="{{ item.url }}" class="nav-contact-socials-link w-inline-block"><img alt="{{ images.0.alt | escape }}" loading="lazy" src="{{ item.data.f_icon-dark.url }}" class="nav-contact-socials-icon"></a>
                     </div>{%- endfor -%}
                   </div>{%- endunless -%}
                   {%- if collection.length == 0 -%}<div class="empty-state-hidden w-dyn-empty">
@@ -369,7 +369,7 @@
             {%- assign collection = collections.social | sort: "-created-on" -%}<div class="aside-cms-socials w-dyn-list">
               {%- unless collection.length == 0 -%}<div role="list" class="aside-cms-socials-list w-dyn-items">
                 {%- for item in collection -%}<div role="listitem" class="aside-cms-social-item w-dyn-item">
-                  <a aria-label="Social Button" href="{{ item.url }}" class="aside-cms-social-link w-inline-block"><img loading="lazy" alt="{{ images.0.alt | escape }}" src="{{ item.data.f_icon-dark.url }}" class="aside-cms-social-icon"></a>
+                  <a aria-label="Social Button" href="{{ item.url }}" class="aside-cms-social-link w-inline-block"><img alt="{{ images.0.alt | escape }}" loading="lazy" src="{{ item.data.f_icon-dark.url }}" class="aside-cms-social-icon"></a>
                 </div>{%- endfor -%}
               </div>{%- endunless -%}
               {%- if collection.length == 0 -%}<div class="empty-state-hidden w-dyn-empty">
@@ -410,7 +410,7 @@
                   <div class="blog-featured-image">
                     <div data-w-id="37b0f58d-2549-f91a-8e8d-63e02761a696" class="image-animation-trigger-2">
                       <div class="image-reveal-bg is-left is-blue-3"></div>
-                      <div class="image-reveal-bg is-right is-blue-3"></div><img loading="lazy" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1.2, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1.2, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1.2, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1.2, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" alt="{{ images.0.alt | escape }}" src="{{ item.data.f_image-main.url }}" class="cover-image">
+                      <div class="image-reveal-bg is-right is-blue-3"></div><img loading="lazy" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1.2, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1.2, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1.2, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1.2, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" src="{{ item.data.f_image-main.url }}" alt="{{ images.0.alt | escape }}" class="cover-image">
                     </div>
                   </div>
                 </div>{%- endfor -%}
@@ -430,7 +430,7 @@
                       <div class="image-scoll-in-trigger">
                         <div data-w-id="90822249-eb4f-82ad-dc41-eeffeb18cb77" class="image-animation-trigger-2">
                           <div class="image-reveal-bg is-left is-blue-3"></div>
-                          <div class="image-reveal-bg is-right is-blue-3"></div><img loading="lazy" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1.2, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1.2, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1.2, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1.2, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" alt="{{ images.0.alt | escape }}" src="{{ item.data.f_image-main.url }}" class="cover-image">
+                          <div class="image-reveal-bg is-right is-blue-3"></div><img loading="lazy" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1.2, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1.2, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1.2, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1.2, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" src="{{ item.data.f_image-main.url }}" alt="{{ images.0.alt | escape }}" class="cover-image">
                         </div>
                       </div>
                     </div>
@@ -471,7 +471,7 @@
                         <div class="image-scoll-in-trigger">
                           <div data-w-id="86ab76f8-c2cc-1877-e5ed-96773b4716fa" class="image-animation-trigger-2">
                             <div class="image-reveal-bg is-left is-blue-3"></div>
-                            <div class="image-reveal-bg is-right is-blue-3"></div><img loading="lazy" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1.2, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1.2, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1.2, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1.2, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" alt="{{ images.0.alt | escape }}" src="{{ item.data.f_image-main.url }}" class="cover-image">
+                            <div class="image-reveal-bg is-right is-blue-3"></div><img loading="lazy" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1.2, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1.2, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1.2, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1.2, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" src="{{ item.data.f_image-main.url }}" alt="{{ images.0.alt | escape }}" class="cover-image">
                           </div>
                         </div>
                       </div>
@@ -514,7 +514,7 @@
                         <div class="image-scoll-in-trigger">
                           <div data-w-id="ad6466d9-b684-dbc1-27e5-5890e0217000" class="image-animation-trigger-2">
                             <div class="image-reveal-bg is-left is-blue-3"></div>
-                            <div class="image-reveal-bg is-right is-blue-3"></div><img loading="lazy" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1.2, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1.2, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1.2, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1.2, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" alt="{{ images.0.alt | escape }}" src="{{ item.data.f_image-main.url }}" class="cover-image">
+                            <div class="image-reveal-bg is-right is-blue-3"></div><img loading="lazy" style="-webkit-transform:translate3d(0, 0, 0) scale3d(1.2, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1.2, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1.2, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1.2, 1.2, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" src="{{ item.data.f_image-main.url }}" alt="{{ images.0.alt | escape }}" class="cover-image">
                           </div>
                         </div>
                       </div>
@@ -572,7 +572,7 @@
         </div>
         <div class="footer-1-brand-row">
           <a href="{{ links.23 }}" class="footer-1-brand-link-1 w-nav-brand"><img src="{{ images.27789c17.url }}" loading="lazy" alt="{{ images.27789c17.alt | escape }}" class="logo-image-default">
-            <p class="footer-2-brand-name">{{ texts.676227e3 }}<span class="span-footer-brand">{{ texts.58 }}</span></p>
+            <p class="footer-2-brand-name">{{ texts.-7b1d2bb1 }}<span class="span-footer-brand">{{ texts.58 }}</span></p>
           </a>
         </div>
         <div class="footer-1-row-1">
@@ -636,7 +636,7 @@
           {%- assign collection = collections.social | sort: "-created-on" -%}<div class="footer-2-socials-2 w-dyn-list">
             {%- unless collection.length == 0 -%}<div role="list" class="footer-2-socials-2-list w-dyn-items">
               {%- for item in collection -%}<div role="listitem" class="footer-2-socials-2-item w-dyn-item">
-                <a aria-label="Social Button" href="{{ item.url }}" class="footer-social-link-1 w-inline-block"><img loading="lazy" alt="{{ images.0.alt | escape }}" src="{{ item.data.f_icon-white.url }}" class="footer-social-icon"></a>
+                <a aria-label="Social Button" href="{{ item.url }}" class="footer-social-link-1 w-inline-block"><img alt="{{ images.0.alt | escape }}" loading="lazy" src="{{ item.data.f_icon-white.url }}" class="footer-social-icon"></a>
               </div>{%- endfor -%}
             </div>{%- endunless -%}
             {%- if collection.length == 0 -%}<div class="empty-state-hidden w-dyn-empty">

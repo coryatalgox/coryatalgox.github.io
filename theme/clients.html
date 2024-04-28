@@ -269,7 +269,7 @@
                 {%- assign collection = collections.social | sort: "-created-on" -%}<div class="nav-contact-socials w-dyn-list">
                   {%- unless collection.length == 0 -%}<div role="list" class="nav-contact-socials-list w-dyn-items">
                     {%- for item in collection -%}<div role="listitem" class="nav-contact-socials-item w-dyn-item">
-                      <a aria-label="Social Button" href="{{ item.url }}" class="nav-contact-socials-link w-inline-block"><img loading="lazy" alt="{{ images.0.alt | escape }}" src="{{ item.data.f_icon-dark.url }}" class="nav-contact-socials-icon"></a>
+                      <a aria-label="Social Button" href="{{ item.url }}" class="nav-contact-socials-link w-inline-block"><img alt="{{ images.0.alt | escape }}" loading="lazy" src="{{ item.data.f_icon-dark.url }}" class="nav-contact-socials-icon"></a>
                     </div>{%- endfor -%}
                   </div>{%- endunless -%}
                   {%- if collection.length == 0 -%}<div class="empty-state-hidden w-dyn-empty">
@@ -367,7 +367,7 @@
             {%- assign collection = collections.social | sort: "-created-on" -%}<div class="aside-cms-socials w-dyn-list">
               {%- unless collection.length == 0 -%}<div role="list" class="aside-cms-socials-list w-dyn-items">
                 {%- for item in collection -%}<div role="listitem" class="aside-cms-social-item w-dyn-item">
-                  <a aria-label="Social Button" href="{{ item.url }}" class="aside-cms-social-link w-inline-block"><img loading="lazy" alt="{{ images.0.alt | escape }}" src="{{ item.data.f_icon-dark.url }}" class="aside-cms-social-icon"></a>
+                  <a aria-label="Social Button" href="{{ item.url }}" class="aside-cms-social-link w-inline-block"><img alt="{{ images.0.alt | escape }}" loading="lazy" src="{{ item.data.f_icon-dark.url }}" class="aside-cms-social-icon"></a>
                 </div>{%- endfor -%}
               </div>{%- endunless -%}
               {%- if collection.length == 0 -%}<div class="empty-state-hidden w-dyn-empty">
@@ -417,11 +417,11 @@
         </div>
       </div>
       <section id="brands" class="section">
-        {%- assign collection = collections.client | sort: "-created-on" -%}<div class="listing-5 w-dyn-list">
+        {%- assign collection = collections.clients-partners | sort: "-created-on" -%}<div class="listing-5 w-dyn-list">
           {%- unless collection.length == 0 -%}<div role="list" class="listing-5-list w-dyn-items">
             {%- for item in collection -%}<div role="listitem" class="listing-5-item w-dyn-item">
               <a data-w-id="d49e9179-4013-c699-a717-839910df8f69" href="{{ item.url }}" class="listing-5-grid in-clients w-inline-block">
-                <div id="w-node-d49e9179-4013-c699-a717-839910df8f6a-cb41deb5" class="listing-5-image is-logo"><img loading="lazy" alt="{{ images.0.alt | escape }}" src="{{ item.data.f_client-logo.url }}" class="client-image"></div>
+                <div id="w-node-d49e9179-4013-c699-a717-839910df8f6a-cb41deb5" class="listing-5-image is-logo"><img alt="{{ images.0.alt | escape }}" loading="lazy" src="{{ item.data.f_client-logo.url }}" class="client-image"></div>
                 <div class="listing-5-link">
                   <h2 class="heading is-listing-5-title">{{ item.data.f_client-brand-name }}</h2>
                 </div>
@@ -469,7 +469,7 @@
                 <div class="while-scrolling-effect-5rem">
                   <div class="image-animation-trigger is-rounded">
                     <div class="parallax-animation">
-                      <div class="animation-color-bg is-light-blue-4"></div><img src="{{ images.-54b3dd5e.url }}" alt="{{ images.-54b3dd5e.alt | escape }}" sizes="(max-width: 479px) 84vw, (max-width: 767px) 89vw, (max-width: 1919px) 90vw, 1544px" class="cover-image is-parallax">
+                      <div class="animation-color-bg is-light-blue-4"></div><img src="{{ images.-54b3dd5e.url }}" alt="{{ images.-54b3dd5e.alt | escape }}" sizes="(max-width: 479px) 84vw, (max-width: 767px) 88vw, (max-width: 1919px) 90vw, 1544.0103759765625px" class="cover-image is-parallax">
                     </div>
                   </div>
                 </div>
@@ -480,19 +480,19 @@
                     <form id="wf-form-Contact-form" name="wf-form-Contact-form" data-name="contact" method="get" class="form-1-flex" data-wf-page-id="661d113b99ce4963cb41deb5" data-wf-element-id="ce16ce19-a5fd-82c0-aa34-f221d54d043b" data-netlify="true" data-ajax="true" data-content-type="application/x-www-form-urlencoded">
                       <div class="form-1-row-1">
                         <div class="form-1-field-block">
-                          <p class="form-1-field-name is-dark">{{ texts.66a3e1bf }}</p><input class="form-1-field is-dark w-input" maxlength="256" name="Name" data-name="Name" placeholder="" type="text" id="Form-2-Name" required="">
+                          <p class="form-1-field-name is-dark">{{ texts.-77dafdc8 }}</p><input class="form-1-field is-dark w-input" maxlength="256" name="Name" data-name="Name" placeholder="" type="text" id="Name">
                         </div>
                         <div class="form-1-field-block">
-                          <p class="form-1-field-name is-dark">{{ texts.2d5f2b0e }}</p><input class="form-1-field is-dark w-input" maxlength="256" name="Email" data-name="Email" placeholder="" type="email" id="Form-2-Email" required="">
+                          <p class="form-1-field-name is-dark">{{ texts.10b2fb7c }}</p><input class="form-1-field is-dark w-input" maxlength="256" name="Role-Title" data-name="Role / Title" placeholder="" type="text" id="Role-Title">
                         </div>
                         <div class="form-1-field-block">
-                          <p class="form-1-field-name is-dark">{{ texts.4984d4e }}</p><input class="form-1-field is-dark w-input" maxlength="256" name="Phone" data-name="Phone" placeholder="" type="tel" id="Form-2-Phone">
+                          <p class="form-1-field-name is-dark">{{ texts.5b7f3c8e }}</p><input class="form-1-field is-dark w-input" maxlength="256" name="Company" data-name="Company" placeholder="" type="text" id="Company">
                         </div>
                         <div class="form-1-field-block">
-                          <p class="form-1-field-name is-dark">{{ texts.773f9b65 }}</p><input class="form-1-field is-dark w-input" maxlength="256" name="Service" data-name="Service" placeholder="" type="text" id="Form-2-Service">
+                          <p class="form-1-field-name is-dark">{{ texts.6a75b063 }}</p><input class="form-1-field is-dark w-input" maxlength="256" name="Contact" data-name="Contact" placeholder="" type="text" id="Contact">
                         </div>
                         <div class="form-1-field-block">
-                          <p class="form-1-field-name is-dark">{{ texts.-63dc6819 }}</p><textarea placeholder="" maxlength="5000" id="Form-2-Message" name="Message" data-name="Message" class="form-1-field is-text-area is-dark w-input"></textarea>
+                          <p class="form-1-field-name is-dark">{{ texts.32b68417 }}</p><textarea placeholder="" maxlength="5000" id="Details" name="Details" data-name="Details" class="form-1-field is-text-area is-dark w-input"></textarea>
                         </div>
                       </div>
                       <div class="form-1-row-2 is-dark">
@@ -525,7 +525,7 @@
         </div>
         <div class="footer-1-brand-row">
           <a href="{{ links.23 }}" class="footer-1-brand-link-1 w-nav-brand"><img src="{{ images.27789c17.url }}" loading="lazy" alt="{{ images.27789c17.alt | escape }}" class="logo-image-default">
-            <p class="footer-2-brand-name">{{ texts.676227e3 }}<span class="span-footer-brand">{{ texts.58 }}</span></p>
+            <p class="footer-2-brand-name">{{ texts.-7b1d2bb1 }}<span class="span-footer-brand">{{ texts.58 }}</span></p>
           </a>
         </div>
         <div class="footer-1-row-1">
@@ -589,7 +589,7 @@
           {%- assign collection = collections.social | sort: "-created-on" -%}<div class="footer-2-socials-2 w-dyn-list">
             {%- unless collection.length == 0 -%}<div role="list" class="footer-2-socials-2-list w-dyn-items">
               {%- for item in collection -%}<div role="listitem" class="footer-2-socials-2-item w-dyn-item">
-                <a aria-label="Social Button" href="{{ item.url }}" class="footer-social-link-1 w-inline-block"><img loading="lazy" alt="{{ images.0.alt | escape }}" src="{{ item.data.f_icon-white.url }}" class="footer-social-icon"></a>
+                <a aria-label="Social Button" href="{{ item.url }}" class="footer-social-link-1 w-inline-block"><img alt="{{ images.0.alt | escape }}" loading="lazy" src="{{ item.data.f_icon-white.url }}" class="footer-social-icon"></a>
               </div>{%- endfor -%}
             </div>{%- endunless -%}
             {%- if collection.length == 0 -%}<div class="empty-state-hidden w-dyn-empty">

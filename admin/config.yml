@@ -264,8 +264,8 @@ collections:
         label: Client
         widget: relation
         required: false
-        collection: client
-        value_field: cms/client/{{slug}}.md
+        collection: clients_partners
+        value_field: cms/clients-partners/{{slug}}.md
         search_fields:
           - slug
           - name
@@ -1033,6 +1033,11 @@ collections:
         label: Team Phone
         widget: string
         required: false
+      - hint: ''
+        name: f_sorting
+        label: Sorting
+        widget: number
+        required: true
       - label: Tags
         widget: hidden
         name: tags
@@ -1045,9 +1050,9 @@ collections:
         name: date
         widget: datetime
       - *ref_2
-  - name: client
-    label: Clients
-    folder: cms/client
+  - name: clients_partners
+    label: Clients & Partners
+    folder: cms/clients-partners
     create: true
     identifier_field: name
     extension: md
@@ -1113,14 +1118,26 @@ collections:
         display_fields:
           - title
         multiple: true
+      - hint: Web3, Fortune 500, or Partner
+        name: f_client-type
+        label: Client Type
+        widget: select
+        required: false
+        options:
+          - label: Web3
+            value: Web3
+          - label: Fortune 500
+            value: Fortune 500
+          - label: Partner
+            value: Partner
       - label: Tags
         widget: hidden
         name: tags
-        default: client
+        default: clients-partners
       - label: Layout
         widget: hidden
         name: layout
-        default: '[client].html'
+        default: '[clients-partners].html'
       - label: Publish Date
         name: date
         widget: datetime
@@ -2010,301 +2027,170 @@ collections:
             label: Text
             name: 3137a9c2
             widget: string
-          - hint: 'Original text: Long-lasting, key: -493b48a5'
+          - hint: 'Original text: Standardized, key: -5d1da213'
             label: Text
-            name: '-493b48a5'
+            name: '-5d1da213'
             widget: string
-          - hint: 'Original text:  relationships , key: -5b72e19b'
+          - hint: 'Original text:  Web3 , key: 3b947061'
             label: Text
-            name: '-5b72e19b'
+            name: 3b947061
             widget: string
-          - hint: 'Original text: built on trust, key: -52463bc7'
+          - hint: 'Original text: investment, key: 72fa32d3'
             label: Text
-            name: '-52463bc7'
-            widget: string
-          - hint: >-
-              Original text: We are committed to understanding your goals and
-              crafting bespoke solutions., key: 4d2e25d2
-            label: Text
-            name: 4d2e25d2
-            widget: string
-          - hint: 'Original text: Why we, key: -65994dba'
-            label: Text
-            name: '-65994dba'
-            widget: string
-          - hint: 'Original text: Innovation, key: -4028fe7b'
-            label: Text
-            name: '-4028fe7b'
+            name: 72fa32d3
             widget: string
           - hint: >-
-              Original text: Embracing new trends to stay ahead of the curve.,
-              key: 28ec45c4
+              Original text: We bridge qualified investors and projects in Korea
+              and the Rest of ASEAN , key: 35f255b7
             label: Text
-            name: 28ec45c4
+            name: 35f255b7
             widget: string
-          - hint: 'Original text: Goals, key: 41c73a0'
+          - hint: 'Original text: Why Us, key: -659951ca'
             label: Text
-            name: 41c73a0
+            name: '-659951ca'
             widget: string
-          - hint: 'Original text: Results, key: -5b5c2c2a'
+          - hint: 'Original text: Expertise, key: 7f8f21f1'
             label: Text
-            name: '-5b5c2c2a'
+            name: 7f8f21f1
             widget: string
           - hint: >-
-              Original text: Proven track record of delivering outcomes, key:
-              21028d27
+              Original text: Our team of Web3 entrepreneurs & investors bring a
+              proven track record over decades in Web3, key: 10d842a6
             label: Text
-            name: 21028d27
+            name: 10d842a6
+            widget: text
+          - hint: 'Original text: Data-driven, key: -5a835879'
+            label: Text
+            name: '-5a835879'
             widget: string
-          - hint: 'Original text: Client, key: 7877dfeb'
+          - hint: >-
+              Original text: We combine our due diligence toolkit with
+              evaluation partnerships to be data-first, key: c1f6dc7
             label: Text
-            name: 7877dfeb
+            name: c1f6dc7
+            widget: string
+          - hint: 'Original text: Tools, key: 4d3d9bb'
+            label: Text
+            name: 4d3d9bb
             widget: string
           - hint: 'Original text: Partnership, key: -626f451c'
             label: Text
             name: '-626f451c'
             widget: string
           - hint: >-
-              Original text: Long-term commitment to your brand's growth, key:
-              6cdbd904
+              Original text: We work the best in certification, listing, and
+              investment to validate low-risk projects, key: -5fbf1382
             label: Text
-            name: 6cdbd904
+            name: '-5fbf1382'
             widget: string
-          - hint: 'Original text: Success, key: -c12281d'
+          - hint: 'Original text: Network, key: -2ee60df2'
             label: Text
-            name: '-c12281d'
+            name: '-2ee60df2'
             widget: string
-          - hint: 'Original text: Schedule a consultation, key: 1ac43471'
+          - hint: 'Original text: Let''s talk, key: -13e0cf3b'
             label: Text
-            name: 1ac43471
-            widget: string
-          - hint: 'Original text: Mon-FRI, key: -5332a164'
-            label: Text
-            name: '-5332a164'
-            widget: string
-          - hint: >-
-              Original text: Unleashing brand potential with bold vision,
-              marketing mastery, and unwavering dedication to growth, key:
-              45500002
-            label: Text
-            name: '45500002'
-            widget: text
-          - hint: 'Original text: 01., key: ba4d'
-            label: Text
-            name: ba4d
-            widget: string
-          - hint: 'Original text: Knowledge meets innovation, key: -47911785'
-            label: Text
-            name: '-47911785'
-            widget: string
-          - hint: >-
-              Original text: Merging industry expertise with groundbreaking
-              ideas and strategies., key: -6a0a3832
-            label: Text
-            name: '-6a0a3832'
-            widget: string
-          - hint: 'Original text: 02., key: ba6c'
-            label: Text
-            name: ba6c
-            widget: string
-          - hint: 'Original text: The Team that delivers results, key: 516f3ee9'
-            label: Text
-            name: 516f3ee9
-            widget: string
-          - hint: >-
-              Original text: Passionate professionals committed to your brand's
-              success and growth., key: 33db350f
-            label: Text
-            name: 33db350f
-            widget: string
-          - hint: 'Original text: 03., key: ba8b'
-            label: Text
-            name: ba8b
-            widget: string
-          - hint: 'Original text: Tailor-made solutions, key: -440877'
-            label: Text
-            name: '-440877'
-            widget: string
-          - hint: >-
-              Original text: Customized approaches addressing your unique
-              business needs., key: 33c55b68
-            label: Text
-            name: 33c55b68
-            widget: string
-          - hint: 'Original text: 04., key: baaa'
-            label: Text
-            name: baaa
-            widget: string
-          - hint: 'Original text: Unwavering dedication, key: -4dbee2ca'
-            label: Text
-            name: '-4dbee2ca'
-            widget: string
-          - hint: >-
-              Original text: Fully invested in achieving lasting results and
-              growth., key: 607f3f89
-            label: Text
-            name: 607f3f89
+            name: '-13e0cf3b'
             widget: string
           - hint: 'Original text: The Team, key: 41aee8ec'
             label: Text
             name: 41aee8ec
             widget: string
-          - hint: 'Original text: We have an excelent Team , key: 455bce04'
+          - hint: 'Original text: A diverse team, key: 9c21e2c'
             label: Text
-            name: 455bce04
+            name: 9c21e2c
             widget: string
-          - hint: 'Original text: with diverse skills, key: -3b6ec6d4'
+          - hint: 'Original text: of Web3 experts, key: -23aa306f'
             label: Text
-            name: '-3b6ec6d4'
+            name: '-23aa306f'
             widget: string
-          - hint: 'Original text: Need an agency?, key: 372afd91'
+          - hint: 'Original text: Agility, key: 24328825'
             label: Text
-            name: 372afd91
-            widget: string
-          - hint: 'Original text: Continuous improvement focus, key: -5782fda3'
-            label: Text
-            name: '-5782fda3'
+            name: '24328825'
             widget: string
           - hint: >-
-              Original text: Adapting and evolving to optimize performance and
-              results., key: 518dccec
+              Original text: We leverage software tools and community
+              involvement to stay at the cutting edge of Web3, key: -6e34f5b
             label: Text
-            name: 518dccec
+            name: '-6e34f5b'
             widget: string
-          - hint: 'Original text: +30 , key: 145158'
+          - hint: 'Original text: $1M+ , key: 212bab5'
             label: Text
-            name: '145158'
+            name: 212bab5
             widget: string
-          - hint: 'Original text: channels, key: 556423d0'
+          - hint: 'Original text: fund, key: 3022c5'
             label: Text
-            name: 556423d0
+            name: 3022c5
             widget: string
-          - hint: 'Original text: +80K , key: 27824d8'
+          - hint: 'Original text: 30+ , key: 17e872'
             label: Text
-            name: 27824d8
+            name: '17e872'
             widget: string
-          - hint: 'Original text: audience, key: 3a26ea04'
+          - hint: 'Original text: companies, key: -54361e25'
             label: Text
-            name: 3a26ea04
+            name: '-54361e25'
             widget: string
-          - hint: 'Original text: +50M , key: 276c7f9'
+          - hint: 'Original text: 40+ , key: 185cd1'
             label: Text
-            name: 276c7f9
+            name: 185cd1
             widget: string
-          - hint: 'Original text: reach, key: 675d973'
+          - hint: 'Original text: years, key: 6d87fd6'
             label: Text
-            name: 675d973
+            name: 6d87fd6
             widget: string
-          - hint: 'Original text: Creativity at our core, key: -37044148'
+          - hint: "Original text: Bridging Korea &\_ASEAN, key: 1cd04eb6"
             label: Text
-            name: '-37044148'
+            name: 1cd04eb6
             widget: string
-          - hint: >-
-              Original text: Designing captivating experiences to inspire, key:
-              653f6a48
+          - hint: "Original text: 70% Korea network +\_30% ASEAN network, key: 415fbfa5"
             label: Text
-            name: 653f6a48
+            name: 415fbfa5
             widget: string
-          - hint: 'Original text: Technological advances, key: 5210475f'
+          - hint: 'Original text: The tools, key: -a0a1ab4'
             label: Text
-            name: 5210475f
+            name: '-a0a1ab4'
             widget: string
           - hint: >-
-              Original text: Staying at the forefront of industry trends and
-              tools, key: 2be739f9
+              Original text: Dune Analytics, Footprint Analytics, DAPPRadar,
+              Ronin Block Explorer, Etherscan, Avalanche Explorer, Nansen,
+              Messari, key: 28d6c94a
             label: Text
-            name: 2be739f9
-            widget: string
-          - hint: 'Original text: Partnership for success, key: 2d7bc070'
-            label: Text
-            name: 2d7bc070
-            widget: string
-          - hint: >-
-              Original text: Collaborating closely to navigate challenges, key:
-              379a6496
-            label: Text
-            name: 379a6496
-            widget: string
-          - hint: >-
-              Original text: Working with this agency has been a game-changer
-              for our business. Their expertise in branding, design, and digital
-              marketing helped us establish a strong online presence and attract
-              our target audience., key: 73564bcb
-            label: Text
-            name: 73564bcb
+            name: 28d6c94a
             widget: text
+          - hint: 'Original text: The partners, key: 33991f9a'
+            label: Text
+            name: 33991f9a
+            widget: string
           - hint: >-
-              Original text: We've seen impressive results, including increased
-              traffic, conversions, and customer engagement. Their team is truly
-              committed to our success, and we couldn't be happier with the
-              partnership., key: 4e3cbaa8
+              Original text: CertiK, TokenInsight, Coinbase, and many more...,
+              key: -54cf1c7c
             label: Text
-            name: 4e3cbaa8
-            widget: text
+            name: '-54cf1c7c'
+            widget: string
+          - hint: 'Original text: Let''s get the ball rolling, key: -647121ea'
+            label: Text
+            name: '-647121ea'
+            widget: string
+          - hint: 'Original text: Your name, key: -77dafdc8'
+            label: Text
+            name: '-77dafdc8'
+            widget: string
+          - hint: 'Original text: Your Title / Role, key: 10b2fb7c'
+            label: Text
+            name: 10b2fb7c
+            widget: string
+          - hint: 'Original text: Company Name, key: 5b7f3c8e'
+            label: Text
+            name: 5b7f3c8e
+            widget: string
           - hint: >-
-              Original text: This agency's creative approach to content
-              marketing and social media management has transformed our online
-              presence. Their team consistently produces high-quality, engaging
-              content that resonates with our audience and drives results., key:
-              111f699
+              Original text: Preferred Contact (Phone, Email, Telegram, Etc.),
+              key: 6a75b063
             label: Text
-            name: 111f699
-            widget: text
-          - hint: >-
-              Original text: They're always proactive and responsive, making the
-              collaboration seamless and enjoyable. I highly recommend their
-              services to anyone looking to elevate their brand., key: 6f7ca719
-            label: Text
-            name: 6f7ca719
-            widget: text
-          - hint: >-
-              Original text: Our experience with this agency has been nothing
-              short of exceptional. They took the time to understand our unique
-              challenges and delivered customized solutions that exceeded our
-              expectations., key: -3560ae63
-            label: Text
-            name: '-3560ae63'
-            widget: text
-          - hint: >-
-              Original text: From the stunning website design to the effective
-              SEO strategy, we've seen significant improvements in our online
-              visibility and customer acquisition. Their team is knowledgeable,
-              professional, and genuinely passionate about helping us grow.,
-              key: abc5c47
-            label: Text
-            name: abc5c47
-            widget: text
-          - hint: 'Original text: All reviews, key: -585e7f84'
-            label: Text
-            name: '-585e7f84'
+            name: 6a75b063
             widget: string
-          - hint: 'Original text: Schedule , key: 6ddde049'
+          - hint: 'Original text: Anything Else, key: 32b68417'
             label: Text
-            name: 6ddde049
-            widget: string
-          - hint: 'Original text: a consultation, key: 171d07e8'
-            label: Text
-            name: 171d07e8
-            widget: string
-          - hint: "Original text: name\_\_*, key: 66a3e1bf"
-            label: Text
-            name: 66a3e1bf
-            widget: string
-          - hint: "Original text: email\_\_*, key: 2d5f2b0e"
-            label: Text
-            name: 2d5f2b0e
-            widget: string
-          - hint: 'Original text: Phone, key: 4984d4e'
-            label: Text
-            name: 4984d4e
-            widget: string
-          - hint: 'Original text: Budget, key: 773f9b65'
-            label: Text
-            name: 773f9b65
-            widget: string
-          - hint: 'Original text: Message, key: -63dc6819'
-            label: Text
-            name: '-63dc6819'
+            name: 32b68417
             widget: string
           - hint: 'Original text: Sent!, key: 4c13369'
             label: Text
@@ -2321,10 +2207,6 @@ collections:
             label: Text
             name: 48aefbf4
             widget: text
-          - hint: 'Original text: Algoritm, key: 676227e3'
-            label: Text
-            name: '676227e3'
-            widget: string
           - hint: 'Original text: Call us, key: -7c14e080'
             label: Text
             name: '-7c14e080'
@@ -2359,13 +2241,25 @@ collections:
             label: Text
             name: 645f0031
             widget: string
+          - hint: 'Original text: 01., key: ba4d'
+            label: Text
+            name: ba4d
+            widget: string
           - hint: 'Original text: Who we are, key: -47239b3c'
             label: Text
             name: '-47239b3c'
             widget: string
+          - hint: 'Original text: 02., key: ba6c'
+            label: Text
+            name: ba6c
+            widget: string
           - hint: 'Original text: What we do, key: -2d422d1f'
             label: Text
             name: '-2d422d1f'
+            widget: string
+          - hint: 'Original text: 03., key: ba8b'
+            label: Text
+            name: ba8b
             widget: string
           - hint: 'Original text: Empowering your brand , key: 39cecfeb'
             label: Text
@@ -2374,6 +2268,20 @@ collections:
           - hint: 'Original text: with innovative strategies, key: 23609e42'
             label: Text
             name: '23609e42'
+            widget: string
+          - hint: 'Original text: Innovation, key: -4028fe7b'
+            label: Text
+            name: '-4028fe7b'
+            widget: string
+          - hint: >-
+              Original text: Embracing new trends to stay ahead of the curve.,
+              key: 28ec45c4
+            label: Text
+            name: 28ec45c4
+            widget: string
+          - hint: 'Original text: Results, key: -5b5c2c2a'
+            label: Text
+            name: '-5b5c2c2a'
             widget: string
           - hint: >-
               Original text: Proven track record of delivering exceptional
@@ -2396,6 +2304,10 @@ collections:
               campaigns., key: c1f2c81
             label: Text
             name: c1f2c81
+            widget: string
+          - hint: 'Original text: Continuous improvement focus, key: -5782fda3'
+            label: Text
+            name: '-5782fda3'
             widget: string
           - hint: >-
               Original text: Transforming brands with cutting-edge solutions,
@@ -2426,6 +2338,28 @@ collections:
           - hint: 'Original text: strategiest and designers, key: -1511323e'
             label: Text
             name: '-1511323e'
+            widget: string
+          - hint: 'Original text: Creativity at our core, key: -37044148'
+            label: Text
+            name: '-37044148'
+            widget: string
+          - hint: >-
+              Original text: Designing captivating experiences to inspire, key:
+              653f6a48
+            label: Text
+            name: 653f6a48
+            widget: string
+          - hint: >-
+              Original text: Merging industry expertise with groundbreaking
+              ideas and strategies., key: -6a0a3832
+            label: Text
+            name: '-6a0a3832'
+            widget: string
+          - hint: >-
+              Original text: Passionate professionals committed to your brand's
+              success and growth., key: 33db350f
+            label: Text
+            name: 33db350f
             widget: string
           - hint: 'Original text: Sarah Johnson , key: -18a43df2'
             label: Text
@@ -2865,6 +2799,10 @@ collections:
             label: Text
             name: 5d0d0938
             widget: string
+          - hint: 'Original text: 04., key: baaa'
+            label: Text
+            name: baaa
+            widget: string
           - hint: 'Original text: Business, key: -4080dc20'
             label: Text
             name: '-4080dc20'
@@ -2880,6 +2818,10 @@ collections:
           - hint: 'Original text: Our Team , key: 4f8534f'
             label: Text
             name: 4f8534f
+            widget: string
+          - hint: 'Original text: with diverse skills, key: -3b6ec6d4'
+            label: Text
+            name: '-3b6ec6d4'
             widget: string
           - hint: 'Original text: Cards sections, key: -6ed13d95'
             label: Text
@@ -2913,10 +2855,6 @@ collections:
           - hint: 'Original text: New, key: 13180'
             label: Text
             name: '13180'
-            widget: string
-          - hint: 'Original text: Expertise, key: 7f8f21f1'
-            label: Text
-            name: 7f8f21f1
             widget: string
           - hint: >-
               Original text: Explain the various services that the business
@@ -3177,6 +3115,10 @@ collections:
             label: Text
             name: '-61d2f458'
             widget: string
+          - hint: 'Original text: Client, key: 7877dfeb'
+            label: Text
+            name: 7877dfeb
+            widget: string
           - hint: 'Original text: Sprint agency, key: 41c300ab'
             label: Text
             name: 41c300ab
@@ -3384,6 +3326,14 @@ collections:
             label: Text
             name: 7c287c2c
             widget: string
+          - hint: "Original text: name\_\_*, key: 66a3e1bf"
+            label: Text
+            name: 66a3e1bf
+            widget: string
+          - hint: "Original text: email\_\_*, key: 2d5f2b0e"
+            label: Text
+            name: 2d5f2b0e
+            widget: string
           - hint: "Original text: Experiences \_\_*, key: 440337b3"
             label: Text
             name: 440337b3
@@ -3391,6 +3341,10 @@ collections:
           - hint: "Original text: Expertise \_\_*, key: -1944685"
             label: Text
             name: '-1944685'
+            widget: string
+          - hint: 'Original text: Message, key: -63dc6819'
+            label: Text
+            name: '-63dc6819'
             widget: string
           - hint: 'Original text: Products, key: -37f9ca7c'
             label: Text
@@ -3596,6 +3550,10 @@ collections:
             label: Text
             name: '-51aaefe3'
             widget: string
+          - hint: 'Original text: Why we, key: -65994dba'
+            label: Text
+            name: '-65994dba'
+            widget: string
           - hint: >-
               Original text: Choose us for unparalleled expertise, as our
               seasoned professionals possess a deep understanding of diverse
@@ -3710,81 +3668,29 @@ collections:
             label: Text
             name: 3360b09c
             widget: string
-          - hint: 'Original text: Proven results, key: 170b2bc8'
+          - hint: "Original text: GET\_STARTED, key: 702054f7"
             label: Text
-            name: 170b2bc8
+            name: 702054f7
             widget: string
-          - hint: 'Original text: Unleashing potential , key: 2012ab04'
+          - hint: 'Original text: Ready to start? , key: 3a13a9bb'
             label: Text
-            name: 2012ab04
+            name: 3a13a9bb
             widget: string
-          - hint: 'Original text: with multidisciplinary mastery, key: -2de21e37'
+          - hint: 'Original text: Let''s roll., key: -684ee9a8'
             label: Text
-            name: '-2de21e37'
-            widget: string
-          - hint: >-
-              Original text: Unlock growth through tailored solutions and
-              innovation., key: -3f17aa7c
-            label: Text
-            name: '-3f17aa7c'
+            name: '-684ee9a8'
             widget: string
           - hint: >-
-              Original text: Transforming brands with data driven approaches.,
-              key: -32d742be
+              Original text: Complete the form below and we'll be right in
+              touch., key: 75ce5e0e
             label: Text
-            name: '-32d742be'
+            name: 75ce5e0e
             widget: string
           - hint: >-
-              Original text: Elevate your brand with our creative, tech-savvy
-              team., key: -1658de6a
+              Original text: No required fields, share as much as you like.,
+              key: -6b8083c3
             label: Text
-            name: '-1658de6a'
-            widget: string
-          - hint: 'Original text: Clients say, key: 5a0331b3'
-            label: Text
-            name: 5a0331b3
-            widget: string
-          - hint: 'Original text: Solution gallery, key: -7c20e435'
-            label: Text
-            name: '-7c20e435'
-            widget: string
-          - hint: 'Original text: The Solution, key: 49821488'
-            label: Text
-            name: '49821488'
-            widget: string
-          - hint: >-
-              Original text: Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit. Suspendisse varius enim in eros elementum tristique. Duis
-              cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
-              commodo diam libero vitae erat. Aenean faucibus nibh et justo
-              cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus
-              tristique posuere., key: -5286fc08
-            label: Text
-            name: '-5286fc08'
-            widget: text
-          - hint: 'Original text: Focus, key: 40e64b8'
-            label: Text
-            name: 40e64b8
-            widget: string
-          - hint: 'Original text: Improve, key: -29f914a8'
-            label: Text
-            name: '-29f914a8'
-            widget: string
-          - hint: 'Original text: Elements, key: 35b2517'
-            label: Text
-            name: 35b2517
-            widget: string
-          - hint: 'Original text: Other Solutions, key: 14ba48ca'
-            label: Text
-            name: 14ba48ca
-            widget: string
-          - hint: 'Original text: Need a solution? , key: 6a988743'
-            label: Text
-            name: 6a988743
-            widget: string
-          - hint: 'Original text: Let us know., key: -452a887a'
-            label: Text
-            name: '-452a887a'
+            name: '-6b8083c3'
             widget: string
           - hint: 'Original text: Meet the team, key: -38e13bb'
             label: Text
@@ -3908,6 +3814,10 @@ collections:
             label: Text
             name: 61da90c2
             widget: text
+          - hint: 'Original text: Phone, key: 4984d4e'
+            label: Text
+            name: 4984d4e
+            widget: string
           - hint: 'Original text: I want to subscribe to a newsletter, key: 1e1551b'
             label: Text
             name: 1e1551b
@@ -4335,36 +4245,10 @@ collections:
             name: '-683917f7'
             widget: string
           - hint: >-
-              Original text: Our team of Web3 entrepreneurs & investors bring a
-              proven track record over decades in Web3, key: 10d842a6
-            label: Text
-            name: 10d842a6
-            widget: text
-          - hint: 'Original text: Data-driven, key: -5a835879'
-            label: Text
-            name: '-5a835879'
-            widget: string
-          - hint: >-
               Original text: We combine our due diligence toolkit with
               evaluation partnerships to be data-first , key: 77ce4b39
             label: Text
             name: 77ce4b39
-            widget: string
-          - hint: 'Original text: Agility, key: 24328825'
-            label: Text
-            name: '24328825'
-            widget: string
-          - hint: >-
-              Original text: We leverage software tools and community
-              involvement to stay at the cutting edge of Web3, key: -6e34f5b
-            label: Text
-            name: '-6e34f5b'
-            widget: string
-          - hint: >-
-              Original text: We work the best in certification, listing, and
-              investment to validate low-risk projects, key: -5fbf1382
-            label: Text
-            name: '-5fbf1382'
             widget: string
           - hint: "Original text: We're a small team of successful Web3 entrepreneurs &\_investors, , key: 611e90a2"
             label: Text
@@ -4382,16 +4266,6 @@ collections:
             label: Text
             name: 3012974b
             widget: string
-          - hint: 'Original text: Articles, key: -4564c9a3'
-            label: Text
-            name: '-4564c9a3'
-            widget: string
-          - hint: >-
-              Original text: High-quality, engaging, and valuable content helps
-              build trust, and establish your brand's authority., key: 2b8b113f
-            label: Text
-            name: 2b8b113f
-            widget: text
           - hint: 'Original text: Get started, key: 667a5d97'
             label: Text
             name: 667a5d97
@@ -4573,6 +4447,59 @@ collections:
             label: Text
             name: 197ba663
             widget: string
+          - hint: >-
+              Original text: Working with this agency has been a game-changer
+              for our business. Their expertise in branding, design, and digital
+              marketing helped us establish a strong online presence and attract
+              our target audience., key: 73564bcb
+            label: Text
+            name: 73564bcb
+            widget: text
+          - hint: >-
+              Original text: We've seen impressive results, including increased
+              traffic, conversions, and customer engagement. Their team is truly
+              committed to our success, and we couldn't be happier with the
+              partnership., key: 4e3cbaa8
+            label: Text
+            name: 4e3cbaa8
+            widget: text
+          - hint: >-
+              Original text: This agency's creative approach to content
+              marketing and social media management has transformed our online
+              presence. Their team consistently produces high-quality, engaging
+              content that resonates with our audience and drives results., key:
+              111f699
+            label: Text
+            name: 111f699
+            widget: text
+          - hint: >-
+              Original text: They're always proactive and responsive, making the
+              collaboration seamless and enjoyable. I highly recommend their
+              services to anyone looking to elevate their brand., key: 6f7ca719
+            label: Text
+            name: 6f7ca719
+            widget: text
+          - hint: >-
+              Original text: Our experience with this agency has been nothing
+              short of exceptional. They took the time to understand our unique
+              challenges and delivered customized solutions that exceeded our
+              expectations., key: -3560ae63
+            label: Text
+            name: '-3560ae63'
+            widget: text
+          - hint: >-
+              Original text: From the stunning website design to the effective
+              SEO strategy, we've seen significant improvements in our online
+              visibility and customer acquisition. Their team is knowledgeable,
+              professional, and genuinely passionate about helping us grow.,
+              key: abc5c47
+            label: Text
+            name: abc5c47
+            widget: text
+          - hint: 'Original text: All reviews, key: -585e7f84'
+            label: Text
+            name: '-585e7f84'
+            widget: string
           - hint: 'Original text: Transform Your Business, key: -7366e8c7'
             label: Text
             name: '-7366e8c7'
@@ -4681,89 +4608,22 @@ collections:
             label: Text
             name: '-15882c5d'
             widget: text
-          - hint: 'Original text: professional, key: 34289e27'
+          - hint: 'Original text: Web3, key: 29137f'
             label: Text
-            name: '34289e27'
+            name: 29137f
+            widget: string
+          - hint: "Original text: Connecting Qualified Projects &\_Investors, key: -1771ac59"
+            label: Text
+            name: '-1771ac59'
+            widget: string
+          - hint: 'Original text: Investment, key: -1633f10d'
+            label: Text
+            name: '-1633f10d'
             widget: string
           - hint: 'Original text: services, key: 5235105e'
             label: Text
             name: 5235105e
             widget: string
-          - hint: 'Original text: Unlock your brand''s full potential , key: -5463d2eb'
-            label: Text
-            name: '-5463d2eb'
-            widget: string
-          - hint: 'Original text: and drive growth, key: 47530cc6'
-            label: Text
-            name: 47530cc6
-            widget: string
-          - hint: 'Original text: Transformation, key: 60abdf29'
-            label: Text
-            name: 60abdf29
-            widget: string
-          - hint: >-
-              Original text: Experience a business metamorphosis as our tailored
-              services unlock your brand's full potential and drive growth.,
-              key: -34682351
-            label: Text
-            name: '-34682351'
-            widget: text
-          - hint: >-
-              Original text: Boost your bottom line and achieve lasting success
-              with our innovative solutions designed to elevate your brand.,
-              key: -da5c367
-            label: Text
-            name: '-da5c367'
-            widget: text
-          - hint: >-
-              Original text: Capitalize on our team's wealth of knowledge and
-              experience to navigate the dynamic marketing landscape with
-              confidence., key: 67373a62
-            label: Text
-            name: 67373a62
-            widget: text
-          - hint: 'Original text: Maximize return on investment, key: 40c93d78'
-            label: Text
-            name: 40c93d78
-            widget: string
-          - hint: >-
-              Original text: Ignite the spark of innovation with our marketing
-              services, empowering your brand to reach new heights., key:
-              -5c588697
-            label: Text
-            name: '-5c588697'
-            widget: text
-          - hint: 'Original text: Outpace your competitors, key: -31a097c7'
-            label: Text
-            name: '-31a097c7'
-            widget: string
-          - hint: >-
-              Original text: Stay ahead of the curve with our strategies and
-              technology, and solidifying your market position., key: 7d1c9ee9
-            label: Text
-            name: 7d1c9ee9
-            widget: text
-          - hint: 'Original text: Forge lasting connections, key: 6dec0a68'
-            label: Text
-            name: 6dec0a68
-            widget: string
-          - hint: >-
-              Original text: Cultivate enduring relationships with your audience
-              through engaging content, and building trust., key: -70f24b90
-            label: Text
-            name: '-70f24b90'
-            widget: text
-          - hint: 'Original text: Customized solutions, key: 5825c95b'
-            label: Text
-            name: 5825c95b
-            widget: string
-          - hint: >-
-              Original text: Experience the power of tailored marketing
-              strategies, uniquely designed to address your specific
-              challenges., key: -5d7b18af
-            label: Text
-            name: '-5d7b18af'
-            widget: text
           - hint: >-
               Original text: Unlock your brand's full potential and drive
               growth, key: -4b1b9025
@@ -4822,6 +4682,14 @@ collections:
           - hint: 'Original text: Innovative solutions, key: -59a99df1'
             label: Text
             name: '-59a99df1'
+            widget: string
+          - hint: 'Original text: Proven results, key: 170b2bc8'
+            label: Text
+            name: 170b2bc8
+            widget: string
+          - hint: 'Original text: Customized solutions, key: 5825c95b'
+            label: Text
+            name: 5825c95b
             widget: string
           - hint: 'Original text: Expert team, key: -2bb5c98d'
             label: Text
@@ -4929,6 +4797,16 @@ collections:
             label: Text
             name: '-3c5c4496'
             widget: string
+          - hint: >-
+              Original text: Lorem ipsum dolor sit amet, consectetur adipiscing
+              elit. Suspendisse varius enim in eros elementum tristique. Duis
+              cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+              commodo diam libero vitae erat. Aenean faucibus nibh et justo
+              cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus
+              tristique posuere., key: -5286fc08
+            label: Text
+            name: '-5286fc08'
+            widget: text
           - hint: 'Original text: This is an example rich text, key: -78326ca4'
             label: Text
             name: '-78326ca4'
@@ -5099,53 +4977,18 @@ collections:
             label: Text
             name: 765cfc9c
             widget: string
-          - hint: >-
-              Original text: The driving force behind your success, key:
-              -2356f9a1
+          - hint: 'Original text: A diverse team of Web3 experts, key: 1989d19d'
             label: Text
-            name: '-2356f9a1'
+            name: 1989d19d
             widget: string
           - hint: 'Original text: The team, key: 41bd74cc'
             label: Text
             name: 41bd74cc
             widget: string
-          - hint: 'Original text: About the Team, key: -7e5143e1'
+          - hint: 'Original text: Schedule a consultation, key: 1ac43471'
             label: Text
-            name: '-7e5143e1'
+            name: 1ac43471
             widget: string
-          - hint: 'Original text: Collaboration, key: 4bd32a25'
-            label: Text
-            name: 4bd32a25
-            widget: string
-          - hint: >-
-              Original text: We believe in the power of teamwork, fostering open
-              communication and collaboration among our team members to create
-              cohesive, synergistic solutions that surpass expectations and
-              drive results., key: -42726f9c
-            label: Text
-            name: '-42726f9c'
-            widget: text
-          - hint: >-
-              Original text: Our seasoned strategists analyze your business,
-              audience, and goals to develop data-driven marketing plans that
-              fuel growth and deliver measurable results. Our team is brimming
-              with talented designers, copywriters, and content creators., key:
-              6b85d6a0
-            label: Text
-            name: 6b85d6a0
-            widget: text
-          - hint: 'Original text: Adaptability, key: 55af47e8'
-            label: Text
-            name: 55af47e8
-            widget: string
-          - hint: >-
-              Original text: Our team thrives in the ever-changing world of
-              marketing, embracing new trends and technologies to keep your
-              brand at the forefront of the digital landscape and ensure
-              long-term success., key: 5e99e953
-            label: Text
-            name: 5e99e953
-            widget: text
           - hint: 'Original text: Detail page, key: -1a419322'
             label: Text
             name: '-1a419322'
@@ -6021,45 +5864,6 @@ collections:
                 widget: string
                 required: false
           - label: Image
-            name: '-34ed5d7e'
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: '-54b3dd5e'
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: 383c1f62
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
             name: '-5a3c7b9e'
             widget: object
             fields:
@@ -6126,19 +5930,6 @@ collections:
                 required: false
           - label: Image
             name: 62ff3182
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: 70d11f12
             widget: object
             fields:
               - name: url
@@ -6372,6 +6163,19 @@ collections:
                 widget: string
                 required: false
           - label: Image
+            name: '-54b3dd5e'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
             name: 32bf84a2
             widget: object
             fields:
@@ -6489,6 +6293,19 @@ collections:
                 widget: string
                 required: false
           - label: Image
+            name: '-34ed5d7e'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
             name: '-34a1f092'
             widget: object
             fields:
@@ -6529,6 +6346,19 @@ collections:
                 required: false
           - label: Image
             name: 16891fb5
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 70d11f12
             widget: object
             fields:
               - name: url
@@ -6659,19 +6489,6 @@ collections:
                 required: false
           - label: Image
             name: '-24bc747e'
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: '-166b107e'
             widget: object
             fields:
               - name: url
@@ -6828,6 +6645,19 @@ collections:
                 required: false
           - label: Image
             name: '-1d15e53e'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-166b107e'
             widget: object
             fields:
               - name: url

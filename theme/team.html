@@ -269,7 +269,7 @@
                 {%- assign collection = collections.social | sort: "-created-on" -%}<div class="nav-contact-socials w-dyn-list">
                   {%- unless collection.length == 0 -%}<div role="list" class="nav-contact-socials-list w-dyn-items">
                     {%- for item in collection -%}<div role="listitem" class="nav-contact-socials-item w-dyn-item">
-                      <a aria-label="Social Button" href="{{ item.url }}" class="nav-contact-socials-link w-inline-block"><img loading="lazy" alt="{{ images.0.alt | escape }}" src="{{ item.data.f_icon-dark.url }}" class="nav-contact-socials-icon"></a>
+                      <a aria-label="Social Button" href="{{ item.url }}" class="nav-contact-socials-link w-inline-block"><img alt="{{ images.0.alt | escape }}" loading="lazy" src="{{ item.data.f_icon-dark.url }}" class="nav-contact-socials-icon"></a>
                     </div>{%- endfor -%}
                   </div>{%- endunless -%}
                   {%- if collection.length == 0 -%}<div class="empty-state-hidden w-dyn-empty">
@@ -367,7 +367,7 @@
             {%- assign collection = collections.social | sort: "-created-on" -%}<div class="aside-cms-socials w-dyn-list">
               {%- unless collection.length == 0 -%}<div role="list" class="aside-cms-socials-list w-dyn-items">
                 {%- for item in collection -%}<div role="listitem" class="aside-cms-social-item w-dyn-item">
-                  <a aria-label="Social Button" href="{{ item.url }}" class="aside-cms-social-link w-inline-block"><img loading="lazy" alt="{{ images.0.alt | escape }}" src="{{ item.data.f_icon-dark.url }}" class="aside-cms-social-icon"></a>
+                  <a aria-label="Social Button" href="{{ item.url }}" class="aside-cms-social-link w-inline-block"><img alt="{{ images.0.alt | escape }}" loading="lazy" src="{{ item.data.f_icon-dark.url }}" class="aside-cms-social-icon"></a>
                 </div>{%- endfor -%}
               </div>{%- endunless -%}
               {%- if collection.length == 0 -%}<div class="empty-state-hidden w-dyn-empty">
@@ -387,7 +387,7 @@
         <div class="container in-header-12">
           <div class="header-12-content">
             <div class="max-width-70">
-              <h1 data-w-id="25c79215-b88f-b7d7-6959-2b31d6f93267" style="opacity:0" class="heading is-header-12-title">{{ texts.-2356f9a1 }}</h1>
+              <h1 data-w-id="25c79215-b88f-b7d7-6959-2b31d6f93267" style="opacity:0" class="heading is-header-12-title">{{ texts.1989d19d }}</h1>
             </div>
             <div data-w-id="25c79215-b88f-b7d7-6959-2b31d6f93269" style="opacity:0" class="header-12-buttons-wrap">
               <div class="header-12-page-buttons">
@@ -420,88 +420,7 @@
           <div data-w-id="25c79215-b88f-b7d7-6959-2b31d6f9327c" style="opacity:0" class="header-12-image-color"></div>
         </div>
       </div>
-      <section id="discover" class="section">
-        <div class="horizontal-images">
-          <div class="horizontal-images-height">
-            <div class="horizontal-image is-left">
-              <div class="image-animation-trigger-2 with-flex"><img src="{{ images.-5a3c7b9e.url }}" loading="lazy" alt="{{ images.-5a3c7b9e.alt | escape }}" class="horizontal-image-screen">
-                <div class="image-reveal-bg is-left is-blue-3"></div>
-                <div class="image-reveal-bg is-right is-blue-3"></div>
-              </div>
-              <div class="horizontal-image-bg"></div>
-            </div>
-            <div class="horizontal-image is-middle">
-              <div class="image-animation-trigger-2 with-flex"><img src="{{ images.4e4a9442.url }}" loading="lazy" alt="{{ images.4e4a9442.alt | escape }}" sizes="(max-width: 479px) 100vw, (max-width: 991px) 88vw, 70vw" class="horizontal-image-screen">
-                <div class="image-reveal-bg is-left is-blue-3"></div>
-                <div class="image-reveal-bg is-right is-blue-3"></div>
-              </div>
-              <div class="horizontal-image-bg"></div>
-            </div>
-            <div class="horizontal-image is-right">
-              <div class="image-animation-trigger-2 with-flex"><img src="{{ images.57d6f742.url }}" loading="lazy" alt="{{ images.57d6f742.alt | escape }}" sizes="(max-width: 479px) 100vw, (max-width: 991px) 88vw, 70vw" class="horizontal-image-screen">
-                <div class="image-reveal-bg is-left is-blue-3"></div>
-                <div class="image-reveal-bg is-right is-blue-3"></div>
-              </div>
-              <div class="horizontal-image-bg"></div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section">
-        <div class="container">
-          <div class="padding top-0em">
-            <div class="w-layout-grid grid-1">
-              <div id="w-node-_974c8806-5cad-6ca4-b457-d0ff5f75e525-cb41e010" class="grid-1-title-block-2">
-                <h2 class="heading is-small-title">{{ texts.-7e5143e1 }}</h2>
-              </div>
-              <div id="w-node-_974c8806-5cad-6ca4-b457-d0ff5f75e528-cb41e010" class="grid-1-content">
-                <p class="uppercase-text-1">{{ texts.76551196 }}</p>
-              </div>
-              <div id="w-node-_974c8806-5cad-6ca4-b457-d0ff5f75e52b-cb41e010" class="grid-1-image-1">
-                <div class="parallax-animation">
-                  <div class="image-animation-trigger is-rounded">
-                    <div class="animation-color-bg is-light-blue-4"></div><img src="{{ images.-5a3c7b9e.url }}" loading="lazy" sizes="(max-width: 479px) 84vw, (max-width: 767px) 89vw, (max-width: 1919px) 90vw, 1544px" alt="{{ images.-5a3c7b9e.alt | escape }}" class="cover-image is-parallax">
-                  </div>
-                </div>
-              </div>
-              <div id="w-node-_974c8806-5cad-6ca4-b457-d0ff5f75e530-cb41e010" class="grid-1-title-block">
-                <div data-w-id="974c8806-5cad-6ca4-b457-d0ff5f75e531" style="opacity:0" class="grid-1-number">{{ texts.ba4d }}</div>
-                <h3 data-w-id="974c8806-5cad-6ca4-b457-d0ff5f75e533" style="opacity:0" class="heading is-extra-small-title">{{ texts.4bd32a25 }}</h3>
-              </div>
-              <div class="grid-1-content">
-                <p data-w-id="974c8806-5cad-6ca4-b457-d0ff5f75e536" style="opacity:0" class="grid-1-text-1">{{ texts.-42726f9c }}</p>
-              </div>
-              <div id="w-node-_974c8806-5cad-6ca4-b457-d0ff5f75e538-cb41e010" class="grid-1-title-block">
-                <div data-w-id="974c8806-5cad-6ca4-b457-d0ff5f75e539" style="opacity:0" class="grid-1-number">{{ texts.ba6c }}</div>
-                <h3 data-w-id="974c8806-5cad-6ca4-b457-d0ff5f75e53b" style="opacity:0" class="heading is-extra-small-title">{{ texts.6e6a0793 }}</h3>
-              </div>
-              <div class="grid-1-content">
-                <p data-w-id="974c8806-5cad-6ca4-b457-d0ff5f75e53e" style="opacity:0" class="grid-1-text-1">{{ texts.6b85d6a0 }}</p>
-              </div>
-              <div id="w-node-_974c8806-5cad-6ca4-b457-d0ff5f75e540-cb41e010" class="grid-1-title-block">
-                <div data-w-id="974c8806-5cad-6ca4-b457-d0ff5f75e541" style="opacity:0" class="grid-1-number">{{ texts.ba8b }}</div>
-                <h3 data-w-id="974c8806-5cad-6ca4-b457-d0ff5f75e543" style="opacity:0" class="heading is-extra-small-title">{{ texts.366b2af8 }}</h3>
-              </div>
-              <div class="grid-1-content">
-                <p data-w-id="974c8806-5cad-6ca4-b457-d0ff5f75e546" style="opacity:0" class="grid-1-text-1">{{ texts.-c5b936a }}</p>
-              </div>
-              <div id="w-node-_2f4a8df3-0b2a-8ca3-3b62-415d30868e37-cb41e010" class="grid-1-title-block">
-                <div data-w-id="2f4a8df3-0b2a-8ca3-3b62-415d30868e38" style="opacity:0" class="grid-1-number">{{ texts.baaa }}</div>
-                <h3 data-w-id="2f4a8df3-0b2a-8ca3-3b62-415d30868e3a" style="opacity:0" class="heading is-extra-small-title">{{ texts.55af47e8 }}</h3>
-              </div>
-              <div class="grid-1-content">
-                <p data-w-id="f3205f21-671a-1251-5827-8c0821fa5bb6" style="opacity:0" class="grid-1-text-1">{{ texts.5e99e953 }}</p>
-                <div data-w-id="dc0d503e-a7ee-828b-ae26-df8e88ac7219" style="opacity:0" class="grid-1-button">
-                  <a data-w-id="354ce9a3-4fc9-d308-ac97-e434fca68df7" href="{{ links.16bdc13e }}" class="main-button w-inline-block">
-                    <div class="button-text">{{ texts.7f274abe }}</div><img src="{{ images.7a65ac51.url }}" loading="lazy" alt="{{ images.7a65ac51.alt | escape }}" class="icon is-medium">
-                    <div class="button-bg-animation"></div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <section id="discover" class="section"></section>
       <div class="section-line">
         <div class="interactive-line-horizontal">
           <div class="line-trigger-for-section"></div>
@@ -515,7 +434,7 @@
             </div>
           </div>
         </div>
-        {%- assign collection = collections.team | sort: "-created-on" -%}<div class="listing-2 w-dyn-list">
+        {%- assign collection = collections.team | sort: "f_sorting" -%}<div class="listing-2 w-dyn-list">
           {%- unless collection.length == 0 -%}<div role="list" class="listing-2-list w-dyn-items">
             {%- for item in collection -%}<div role="listitem" class="listing-2-item is-dark w-dyn-item">
               <div id="w-node-b83d568a-afe5-ea6c-a900-934a0659247a-cb41e010" class="listing-2-column-1">
@@ -561,7 +480,7 @@
         </div>
         <div class="footer-1-brand-row">
           <a href="{{ links.23 }}" class="footer-1-brand-link-1 w-nav-brand"><img src="{{ images.27789c17.url }}" loading="lazy" alt="{{ images.27789c17.alt | escape }}" class="logo-image-default">
-            <p class="footer-2-brand-name">{{ texts.676227e3 }}<span class="span-footer-brand">{{ texts.58 }}</span></p>
+            <p class="footer-2-brand-name">{{ texts.-7b1d2bb1 }}<span class="span-footer-brand">{{ texts.58 }}</span></p>
           </a>
         </div>
         <div class="footer-1-row-1">
@@ -625,7 +544,7 @@
           {%- assign collection = collections.social | sort: "-created-on" -%}<div class="footer-2-socials-2 w-dyn-list">
             {%- unless collection.length == 0 -%}<div role="list" class="footer-2-socials-2-list w-dyn-items">
               {%- for item in collection -%}<div role="listitem" class="footer-2-socials-2-item w-dyn-item">
-                <a aria-label="Social Button" href="{{ item.url }}" class="footer-social-link-1 w-inline-block"><img loading="lazy" alt="{{ images.0.alt | escape }}" src="{{ item.data.f_icon-white.url }}" class="footer-social-icon"></a>
+                <a aria-label="Social Button" href="{{ item.url }}" class="footer-social-link-1 w-inline-block"><img alt="{{ images.0.alt | escape }}" loading="lazy" src="{{ item.data.f_icon-white.url }}" class="footer-social-icon"></a>
               </div>{%- endfor -%}
             </div>{%- endunless -%}
             {%- if collection.length == 0 -%}<div class="empty-state-hidden w-dyn-empty">

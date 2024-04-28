@@ -1,13 +1,13 @@
 ---
 f_color: '#78e4ff'
 f_featured: true
-f_sorting-number: 2
+f_sorting-number: 3
 title: Compliance, Auditing, Scoring, & Listing
 f_description-short: >-
   Check the boxes for due diligence by leveraging our expertise and our partner
   networks
 f_title-long: Compliance, Auditing, Scoring, & Listing
-f_number-text: '02.'
+f_number-text: '03.'
 f_description: >-
   Our team combines experience working with more than 30 prominent Web3
   companies and tight connections with the leading partners in auditing and
@@ -30,9 +30,9 @@ f_gallery:
       /assets/external/661d113c99ce4963cb41e258_balazs-ketyi-9vzorkfbsmm-unsplash.jpg
     alt: null
 f_solution: cms/solution/startups.md
-updated-on: '2024-04-18T09:03:32.189Z'
+updated-on: '2024-04-27T14:18:18.374Z'
 created-on: '2024-04-18T09:03:21.632Z'
-published-on: '2024-04-18T10:20:17.117Z'
+published-on: '2024-04-27T14:57:52.054Z'
 layout: '[service].html'
 tags: service
 ---

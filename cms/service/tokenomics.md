@@ -1,13 +1,13 @@
 ---
 f_color: '#78e4ff'
 f_featured: true
-f_sorting-number: 3
+f_sorting-number: 2
 title: Tokenomics, Governance, Framework, & Roadmap
 f_description-short: >-
   Future-proof your token economy and project roadmap to show that you're here
   to stay
 f_title-long: Tokenomics, Governance, Framework, & Roadmap
-f_number-text: '03.'
+f_number-text: '02.'
 f_description: >-
   Eliminate common concerns about projects being scams, rug-pulls, or
   pump-and-dumps by proving that your project features a sustainable economy and
@@ -30,9 +30,9 @@ f_gallery:
       /assets/external/661d113c99ce4963cb41e258_balazs-ketyi-9vzorkfbsmm-unsplash.jpg
     alt: null
 f_solution: cms/solution/startups.md
-updated-on: '2024-04-18T09:19:23.958Z'
+updated-on: '2024-04-27T14:18:02.170Z'
 created-on: '2024-04-18T09:19:18.008Z'
-published-on: '2024-04-18T10:20:17.117Z'
+published-on: '2024-04-27T14:57:52.054Z'
 layout: '[service].html'
 tags: service
 ---

@@ -269,7 +269,7 @@
                 {%- assign collection = collections.social | sort: "-created-on" -%}<div class="nav-contact-socials w-dyn-list">
                   {%- unless collection.length == 0 -%}<div role="list" class="nav-contact-socials-list w-dyn-items">
                     {%- for item in collection -%}<div role="listitem" class="nav-contact-socials-item w-dyn-item">
-                      <a aria-label="Social Button" href="{{ item.url }}" class="nav-contact-socials-link w-inline-block"><img loading="lazy" alt="{{ images.0.alt | escape }}" src="{{ item.data.f_icon-dark.url }}" class="nav-contact-socials-icon"></a>
+                      <a aria-label="Social Button" href="{{ item.url }}" class="nav-contact-socials-link w-inline-block"><img alt="{{ images.0.alt | escape }}" loading="lazy" src="{{ item.data.f_icon-dark.url }}" class="nav-contact-socials-icon"></a>
                     </div>{%- endfor -%}
                   </div>{%- endunless -%}
                   {%- if collection.length == 0 -%}<div class="empty-state-hidden w-dyn-empty">
@@ -367,7 +367,7 @@
             {%- assign collection = collections.social | sort: "-created-on" -%}<div class="aside-cms-socials w-dyn-list">
               {%- unless collection.length == 0 -%}<div role="list" class="aside-cms-socials-list w-dyn-items">
                 {%- for item in collection -%}<div role="listitem" class="aside-cms-social-item w-dyn-item">
-                  <a aria-label="Social Button" href="{{ item.url }}" class="aside-cms-social-link w-inline-block"><img loading="lazy" alt="{{ images.0.alt | escape }}" src="{{ item.data.f_icon-dark.url }}" class="aside-cms-social-icon"></a>
+                  <a aria-label="Social Button" href="{{ item.url }}" class="aside-cms-social-link w-inline-block"><img alt="{{ images.0.alt | escape }}" loading="lazy" src="{{ item.data.f_icon-dark.url }}" class="aside-cms-social-icon"></a>
                 </div>{%- endfor -%}
               </div>{%- endunless -%}
               {%- if collection.length == 0 -%}<div class="empty-state-hidden w-dyn-empty">
